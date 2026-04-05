@@ -1,4 +1,4 @@
 environment: python
 pythonVersion: "3.11.9"
-buildCommand: pip install -r requirements.txt
+buildCommand: git lfs pull && pip install -r requirements.txt
 startCommand: gunicorn app:app --timeout 120
